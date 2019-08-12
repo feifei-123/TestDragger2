@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.example.testdragger2.app.MyApp;
+import com.example.testdragger2.worm.DaggerWormComponent;
 import com.example.testdragger2.worm.Worm;
 import com.example.testdragger2.worm.WormModule;
 

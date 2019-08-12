@@ -32,6 +32,7 @@ public interface WormComponent {
      */
 
     //提供一个返回Worm的方法
+
     Worm provideW();
 
     //返回一个字符串

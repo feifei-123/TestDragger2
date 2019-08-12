@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.example.testdragger2.activity.DaggerHomeActivityComponent;
+import com.example.testdragger2.activity.HomeActivityComponent;
 import com.example.testdragger2.app.MyApp;
+import com.example.testdragger2.worm.DaggerWormComponent;
 import com.example.testdragger2.worm.Worm;
 import com.example.testdragger2.worm.WormComponent;
 import com.example.testdragger2.worm.WormModule;
@@ -54,6 +57,8 @@ import javax.inject.Named;
                 +"mWorm_dev:"+mWorm_dev.getName()+"\n"
                 +"mWorm.releae:"+mWorm_release.getName()+"\n"
                 +",user.getName:"+mUser.getName());
+
+       HomeActivityComponent homeActivityComponent = DaggerHomeActivityComponent.builder().activity(this).build();
 
     }
 
