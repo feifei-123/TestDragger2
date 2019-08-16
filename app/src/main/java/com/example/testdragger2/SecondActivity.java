@@ -11,6 +11,8 @@ import com.example.testdragger2.worm.WormModule;
 
 import javax.inject.Inject;
 
+import dagger.android.AndroidInjection;
+
 public class SecondActivity extends Activity {
 
     @Inject
@@ -18,11 +20,12 @@ public class SecondActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-
-        DaggerWormComponent.builder().wormModule(new WormModule("test"))
-                .appComponent(MyApp.getAppComponent()).build().testInject(this);
-        Log.d("feifei","mWorm3.hashCode:"+mWorm3.hashCode());
+//
+//        DaggerWormComponent.builder().wormModule(new WormModule("test"))
+//                .appComponent(MyApp.getAppComponent()).build().testInject(this);
+//        Log.d("feifei","mWorm3.hashCode:"+mWorm3.hashCode());
     }
 }

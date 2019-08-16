@@ -9,4 +9,5 @@ import dagger.Component;
 public interface ManComponent {
     void injectMain(Man man);
     Car car();
+
 }

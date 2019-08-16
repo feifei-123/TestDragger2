@@ -4,5 +4,5 @@ import javax.inject.Inject;
 
 public class Friend {
     @Inject
-    Car car;
+    public Car car;
 }
