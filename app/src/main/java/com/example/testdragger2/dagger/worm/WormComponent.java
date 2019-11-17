@@ -1,9 +1,7 @@
-package com.example.testdragger2.worm;
+package com.example.testdragger2.dagger.worm;
 
 import com.example.testdragger2.ActivityScoped;
-import com.example.testdragger2.MainActivity;
-import com.example.testdragger2.SecondActivity;
-import com.example.testdragger2.app.AppComponent;
+import com.example.testdragger2.dagger_android.di.AppComponent;
 
 import dagger.Component;
 
@@ -37,8 +35,5 @@ public interface WormComponent {
 
     //返回一个字符串
     String provideN();
-
-    void testInject(MainActivity activity);
-    void testInject(SecondActivity activity);
 
 }

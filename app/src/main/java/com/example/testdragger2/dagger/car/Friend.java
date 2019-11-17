@@ -1,4 +1,4 @@
-package com.example.testdragger2.car;
+package com.example.testdragger2.dagger.car;
 
 import javax.inject.Inject;
 

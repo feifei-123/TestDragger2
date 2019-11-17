@@ -4,7 +4,6 @@ import javax.inject.Inject;
 
 import dagger.Module;
 
-@Module
 public class User {
     private String name;
     @Inject

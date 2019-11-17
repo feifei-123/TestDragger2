@@ -1,4 +1,4 @@
-package com.example.testdragger2.worm;
+package com.example.testdragger2.dagger.worm;
 
 public class Worm {
     private String name;

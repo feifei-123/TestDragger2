@@ -1,6 +1,4 @@
-package com.example.testdragger2.car;
-
-import com.example.testdragger2.ActivityScoped;
+package com.example.testdragger2.dagger.car;
 
 import dagger.Module;
 import dagger.Provides;
